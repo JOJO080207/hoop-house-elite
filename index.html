@@ -7,94 +7,118 @@
 <title>Hoop House Elite</title>
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background:#050505;
-    color:white;
-    font-family:Arial, Helvetica, sans-serif;
+body {
+    background: #050505;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.hero{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px 20px;
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px 40px;
 }
 
-.logo{
-    width:300px;
-    max-width:80%;
-    margin-bottom:25px;
+.logo {
+    width: 430px;
+    max-width: 85%;
+    margin-bottom: 15px;
 }
 
-h1{
-    font-size:4rem;
-    color:#e6c55a;
-    margin-bottom:15px;
-    letter-spacing:2px;
+h1 {
+    font-size: 3rem;
+    color: #e6c55a;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
 }
 
-.tagline{
-    font-size:1.4rem;
-    color:#dcdcdc;
-    margin-bottom:35px;
+.tagline {
+    font-size: 1.25rem;
+    color: #dcdcdc;
+    margin-bottom: 25px;
+    max-width: 850px;
 }
 
-.button{
-    display:inline-block;
-    background:#e6c55a;
-    color:black;
-    text-decoration:none;
-    font-weight:bold;
-    padding:18px 40px;
-    border-radius:8px;
-    margin-bottom:60px;
+.button {
+    display: inline-block;
+    background: #e6c55a;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 16px 36px;
+    border-radius: 8px;
+    margin-bottom: 40px;
 }
 
-.programs{
-    width:100%;
-    max-width:1400px;
+.programs {
+    width: 100%;
+    max-width: 1450px;
 }
 
-.programs h2{
-    color:#e6c55a;
-    font-size:3rem;
-    margin-bottom:40px;
+.programs h2 {
+    color: #e6c55a;
+    font-size: 2.7rem;
+    margin-bottom: 28px;
 }
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 26px;
 }
 
-.card{
-    background:#111;
-    border:2px solid #e6c55a;
-    border-radius:12px;
-    padding:30px;
+.card {
+    background: #111;
+    border: 2px solid #e6c55a;
+    border-radius: 12px;
+    padding: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card h3{
-    color:#e6c55a;
-    margin-bottom:15px;
-    font-size:1.8rem;
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 22px rgba(230, 197, 90, 0.35);
 }
 
-.card p{
-    color:#ddd;
-    line-height:1.6;
+.card h3 {
+    color: #e6c55a;
+    margin-bottom: 15px;
+    font-size: 1.7rem;
 }
 
+.card p {
+    color: #ddd;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 320px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .programs h2 {
+        font-size: 2.1rem;
+    }
+}
 </style>
 </head>
 
@@ -107,8 +131,7 @@ h1{
 <h1>HOOP HOUSE ELITE</h1>
 
 <p class="tagline">
-Developing skilled players. Building disciplined athletes.
-Creating future leaders.
+Developing skilled players. Building disciplined athletes. Creating future leaders.
 </p>
 
 <a href="#" class="button">TRYOUTS COMING SOON</a>
@@ -122,24 +145,21 @@ Creating future leaders.
 <div class="card">
 <h3>🏀 Skills Training</h3>
 <p>
-Individual and small-group training focused on ball handling,
-shooting, footwork, finishing, basketball IQ, and confidence.
+Individual and small-group training focused on ball handling, shooting, footwork, finishing, basketball IQ, and confidence.
 </p>
 </div>
 
 <div class="card">
 <h3>🏆 AAU Teams</h3>
 <p>
-Competitive travel teams dedicated to player development,
-teamwork, exposure, and preparing athletes for the next level.
+Competitive travel teams dedicated to player development, teamwork, exposure, and preparing athletes for the next level.
 </p>
 </div>
 
 <div class="card">
 <h3>📈 Player Development</h3>
 <p>
-A complete athlete approach including leadership, mindset,
-discipline, work ethic, academics, and long-term growth.
+A complete athlete approach including leadership, mindset, discipline, work ethic, academics, and long-term growth.
 </p>
 </div>
 
