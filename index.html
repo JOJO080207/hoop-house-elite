@@ -19,20 +19,42 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.hero {
-    min-height: 100vh;
+.navbar {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 22px 50px;
+    border-bottom: 1px solid #222;
+}
+
+.nav-logo {
+    color: #e6c55a;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 28px;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    color: #e6c55a;
+}
+
+.hero {
     text-align: center;
-    padding: 30px 20px 40px;
+    padding: 40px 20px 50px;
 }
 
 .logo {
-    width: 430px;
-    max-width: 85%;
-    margin-bottom: 15px;
+    width: 260px;
+    max-width: 80%;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -46,7 +68,6 @@ h1 {
     font-size: 1.25rem;
     color: #dcdcdc;
     margin-bottom: 25px;
-    max-width: 850px;
 }
 
 .button {
@@ -57,17 +78,20 @@ h1 {
     font-weight: bold;
     padding: 16px 36px;
     border-radius: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .programs {
     width: 100%;
     max-width: 1450px;
+    margin: 0 auto;
+    padding: 20px 30px 60px;
+    text-align: center;
 }
 
 .programs h2 {
     color: #e6c55a;
-    font-size: 2.7rem;
+    font-size: 2.6rem;
     margin-bottom: 28px;
 }
 
@@ -103,8 +127,19 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links a {
+        margin: 0 10px;
+        font-size: 0.85rem;
+    }
+
     .logo {
-        width: 320px;
+        width: 220px;
     }
 
     h1 {
@@ -124,6 +159,17 @@ h1 {
 
 <body>
 
+<nav class="navbar">
+    <div class="nav-logo">HOOP HOUSE ELITE</div>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Training</a>
+        <a href="#">Teams</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
 <section class="hero">
 
 <img src="logo.png" alt="Hoop House Elite Logo" class="logo">
@@ -136,7 +182,9 @@ Developing skilled players. Building disciplined athletes. Creating future leade
 
 <a href="#" class="button">TRYOUTS COMING SOON</a>
 
-<div class="programs">
+</section>
+
+<section class="programs">
 
 <h2>OUR PROGRAMS</h2>
 
@@ -161,8 +209,6 @@ Competitive travel teams dedicated to player development, teamwork, exposure, an
 <p>
 A complete athlete approach including leadership, mindset, discipline, work ethic, academics, and long-term growth.
 </p>
-</div>
-
 </div>
 
 </div>
