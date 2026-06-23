@@ -1,61 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hoop House Elite</title>
+<title>Hoop House Elite</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111111;
-      color: white;
-      text-align: center;
-    }
+<style>
 
-    .hero {
-      padding: 120px 20px;
-    }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: white;
+}
 
-    h1 {
-      font-size: 72px;
-      margin-bottom: 20px;
-      color: #f5c542;
-    }
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
 
-    p {
-      font-size: 24px;
-      max-width: 800px;
-      margin: auto;
-    }
+.hero h1 {
+    font-size: 90px;
+    color: #f5c542;
+    margin-bottom: 20px;
+}
 
-    .button {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 15px 30px;
-      background: #f5c542;
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-  </style>
+.hero p {
+    font-size: 24px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 30px;
+    background: #f5c542;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.programs {
+    background: #111;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.programs h2 {
+    color: #f5c542;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1b1b1b;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid #f5c542;
+}
+
+.card h3 {
+    color: #f5c542;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <div class="hero">
+<div class="hero">
 
     <h1>HOOP HOUSE ELITE</h1>
 
     <p>
-      Building disciplined athletes on and off the court.
+        Building disciplined athletes on and off the court.
     </p>
 
     <a class="button" href="#">
-      TRYOUTS COMING SOON
+        TRYOUTS COMING SOON
     </a>
 
-  </div>
+</div>
+
+<section class="programs">
+
+    <h2>OUR PROGRAMS</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🏀 Skills Training</h3>
+            <p>
+                Individual and small-group training focused on ball handling,
+                shooting, footwork, basketball IQ, and game performance.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏆 AAU Teams</h3>
+            <p>
+                Competitive travel basketball teams committed to development,
+                discipline, teamwork, and tournament competition.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📈 Player Development</h3>
+            <p>
+                A complete athlete development system focused on confidence,
+                leadership, accountability, and long-term growth.
+            </p>
+        </div>
+
+    </div>
+
+</section>
 
 </body>
 </html>
