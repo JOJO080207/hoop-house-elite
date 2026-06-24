@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #050505;
     color: white;
@@ -26,6 +30,9 @@ body {
     padding: 18px 44px;
     border-bottom: 1px solid #1f1f1f;
     background: #050505;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-logo {
@@ -91,7 +98,8 @@ h1 {
 
 .programs h2,
 .why h2,
-.founding h2 {
+.founding h2,
+.contact h2 {
     color: #e6c55a;
     font-size: 2.45rem;
     margin-bottom: 30px;
@@ -110,12 +118,6 @@ h1 {
     border-radius: 12px;
     padding: 34px 28px;
     min-height: 185px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 22px rgba(230, 197, 90, 0.35);
 }
 
 .card h3 {
@@ -177,6 +179,40 @@ h1 {
     box-shadow: 0 0 28px rgba(230, 197, 90, 0.25);
 }
 
+.contact {
+    background: #0b0b0b;
+    padding: 60px 24px;
+    text-align: center;
+    border-top: 1px solid #1f1f1f;
+}
+
+.contact-box {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #111111;
+    border: 2px solid #e6c55a;
+    border-radius: 14px;
+    padding: 34px 28px;
+}
+
+.contact-box p {
+    color: #dddddd;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 10px;
+    color: black;
+    background: #e6c55a;
+    padding: 13px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 800;
+}
+
 .footer {
     text-align: center;
     padding: 28px 20px;
@@ -216,7 +252,8 @@ h1 {
 
     .programs h2,
     .why h2,
-    .founding h2 {
+    .founding h2,
+    .contact h2 {
         font-size: 2rem;
     }
 }
@@ -229,14 +266,14 @@ h1 {
     <div class="nav-logo">HOOP HOUSE ELITE</div>
 
     <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Training</a>
-        <a href="#">Teams</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#programs">Training</a>
+        <a href="#programs">Teams</a>
+        <a href="#contact">Contact</a>
     </div>
 </nav>
 
-<section class="hero">
+<section class="hero" id="home">
 
 <img src="logo.png" alt="Hoop House Elite Logo" class="logo">
 
@@ -252,7 +289,7 @@ Developing skilled players. Building disciplined athletes. Creating future leade
 
 </section>
 
-<section class="programs">
+<section class="programs" id="programs">
 
 <h2>OUR PROGRAMS</h2>
 
@@ -307,6 +344,29 @@ New Energy. New Vibe. New Mission. One Goal. Hoop House Elite is building toward
 </p>
 
 <img src="founding-season.png" alt="Hoop House Elite Founding Season Flyer" class="flyer">
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>CONTACT HOOP HOUSE ELITE</h2>
+
+<div class="contact-box">
+<p>
+Interested in Hoop House Elite skills training, AAU teams, or player development? Complete the player interest form and our staff will follow up with future updates.
+</p>
+
+<p>
+📍 Augusta / Columbia County Area<br>
+🏀 Boys 6th–8th Grade<br>
+📅 Founding Season 2027
+</p>
+
+<div class="contact-links">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeWwe-A72LRH_SdNA9Rc4T7snkpMRMvhuwEINdjoiLDEmvs9A/viewform?usp=sharing" target="_blank">Player Interest Form</a>
+<a href="mailto:joecbirkheadiv@gmail.com">Email Us</a>
+</div>
+</div>
 
 </section>
 
