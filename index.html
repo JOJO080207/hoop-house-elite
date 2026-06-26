@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Hoop House Elite</title>
+<title>Website Under Development</title>
 
 <style>
 * {
@@ -13,426 +13,63 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
+    min-height: 100vh;
     background: #050505;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 18px 44px;
-    border-bottom: 1px solid #1f1f1f;
-    background: #050505;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.nav-logo {
-    color: #e6c55a;
-    font-size: 1.35rem;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    margin-left: 28px;
-    font-weight: 700;
-    font-size: 0.95rem;
-}
-
-.nav-links a:hover {
-    color: #e6c55a;
-}
-
-.hero {
-    text-align: center;
-    padding: 60px 20px 80px;
-
-    background:
-        linear-gradient(
-            rgba(0,0,0,.55),
-            rgba(0,0,0,.75)
-        ),
-        url('hero-banner.png');
-
-    background-size: cover;
-    background-position: center 15%;
-    background-repeat: no-repeat;
-
-    min-height: 700px;
-
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    padding: 30px;
 }
 
-.logo {
-    width: 220px;
-    max-width: 80%;
-    margin-bottom: 18px;
+.container {
+    max-width: 800px;
 }
 
 h1 {
-    font-size: 2.85rem;
     color: #e6c55a;
-    margin-bottom: 12px;
+    font-size: 3rem;
+    margin-bottom: 20px;
     letter-spacing: 2px;
 }
 
-.tagline {
-    font-size: 1.22rem;
-    color: #e5e5e5;
-    margin-bottom: 26px;
-}
-
-.button {
-    display: inline-block;
-    background: #e6c55a;
-    color: black;
-    text-decoration: none;
-    font-weight: 800;
-    padding: 15px 34px;
-    border-radius: 8px;
-}
-.button {
-    display: inline-block;
-    background: #e6c55a;
-    color: black;
-    text-decoration: none;
-    font-weight: 800;
-    padding: 15px 34px;
-    border-radius: 8px;
-}
-
-.social-buttons {
-    margin-top: 18px;
-}
-
-.social-buttons a {
-    display: inline-block;
-    background: #111111;
-    color: #e6c55a;
-    text-decoration: none;
-    font-weight: 800;
-    padding: 12px 24px;
-    border: 2px solid #e6c55a;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-}
-
-.social-buttons a:hover {
-    background: #e6c55a;
-    color: black;
-}
-.programs {
-    width: 100%;
-    max-width: 1450px;
-    margin: 0 auto;
-    padding: 34px 30px 56px;
-    text-align: center;
-}
-
-.programs h2,
-.why h2,
-.founding h2,
-.contact h2 {
-    color: #e6c55a;
-    font-size: 2.45rem;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 26px;
-}
-
-.card {
-    background: #111111;
-    border: 2px solid #e6c55a;
-    border-radius: 12px;
-    padding: 34px 28px;
-    min-height: 185px;
-}
-
-.card h3 {
-    color: #e6c55a;
-    margin-bottom: 16px;
-    font-size: 1.65rem;
-}
-
-.card p {
+p {
     color: #dddddd;
+    font-size: 1.2rem;
     line-height: 1.6;
-    font-size: 1rem;
-}
-
-.why {
-    background: #0b0b0b;
-    padding: 52px 24px;
-    text-align: center;
-    border-top: 1px solid #1f1f1f;
-}
-
-.why-grid {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-}
-
-.why-item {
-    background: #111;
-    padding: 20px;
-    border-radius: 10px;
-    color: #eeeeee;
-    font-weight: 700;
-    border: 1px solid #2a2a2a;
-}
-
-.founding {
-    background: #050505;
-    padding: 60px 24px;
-    text-align: center;
-    border-top: 1px solid #1f1f1f;
-}
-
-.founding p {
-    color: #dcdcdc;
-    font-size: 1.15rem;
-    max-width: 850px;
-    margin: 0 auto 30px;
-    line-height: 1.6;
-}
-
-.flyer {
-    width: 520px;
-    max-width: 95%;
-    border-radius: 14px;
-    border: 2px solid #e6c55a;
-    box-shadow: 0 0 28px rgba(230, 197, 90, 0.25);
-}
-
-.contact {
-    background: #0b0b0b;
-    padding: 60px 24px;
-    text-align: center;
-    border-top: 1px solid #1f1f1f;
-}
-
-.contact-box {
-    max-width: 850px;
-    margin: 0 auto;
-    background: #111111;
-    border: 2px solid #e6c55a;
-    border-radius: 14px;
-    padding: 34px 28px;
-}
-
-.contact-box p {
-    color: #dddddd;
-    font-size: 1.1rem;
-    line-height: 1.7;
     margin-bottom: 18px;
 }
 
-.contact-links a {
-    display: inline-block;
-    margin: 10px;
-    color: black;
-    background: #e6c55a;
-    padding: 13px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 800;
-}
-
-.footer {
-    text-align: center;
-    padding: 28px 20px;
+.notice {
+    margin-top: 30px;
     color: #aaaaaa;
-    font-size: 0.9rem;
-    border-top: 1px solid #1f1f1f;
-}
-
-@media (max-width: 900px) {
-    .cards,
-    .why-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .navbar {
-        flex-direction: column;
-        gap: 14px;
-        padding: 20px;
-    }
-
-    .nav-links a {
-        margin: 0 10px;
-        font-size: 0.85rem;
-    }
-
-    .logo {
-        width: 225px;
-    }
-
-    h1 {
-        font-size: 2.2rem;
-    }
-
-    .tagline {
-        font-size: 1rem;
-    }
-
-    .programs h2,
-    .why h2,
-    .founding h2,
-    .contact h2 {
-        font-size: 2rem;
-    }
+    font-size: 0.95rem;
 }
 </style>
 </head>
 
 <body>
 
-<nav class="navbar">
-    <div class="nav-logo">HOOP HOUSE ELITE</div>
+<div class="container">
 
-    <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#programs">Training</a>
-        <a href="#programs">Teams</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
-
-<section class="hero" id="home">
-
-<img src="logo.png" alt="Hoop House Elite Logo" class="logo">
-
-<h1>HOOP HOUSE ELITE</h1>
-
-<p class="tagline">
-Developing skilled players. Building disciplined athletes. Creating future leaders.
-</p>
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSeWwe-A72LRH_SdNA9Rc4T7snkpMRMvhuwEINdjoiLDEmvs9A/viewform?usp=sharing"
-   target="_blank"
-   class="button">PLAYER INTEREST FORM</a>
-
-<div class="social-buttons">
-    <a href="https://www.instagram.com/_uptownkings/" target="_blank">
-        📸 FOLLOW ON INSTAGRAM
-    </a>
-</div>
-</section>
-
-<section class="programs" id="programs">
-
-<h2>OUR PROGRAMS</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🏀 Skills Training</h3>
-<p>
-Individual and small-group training focused on ball handling, shooting, footwork, finishing, basketball IQ, and confidence.
-</p>
-</div>
-
-<div class="card">
-<h3>🏆 AAU Teams</h3>
-<p>
-Competitive travel teams dedicated to player development, teamwork, exposure, and preparing athletes for the next level.
-</p>
-</div>
-
-<div class="card">
-<h3>📈 Player Development</h3>
-<p>
-A complete athlete approach including leadership, mindset, discipline, work ethic, academics, and long-term growth.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="why">
-
-<h2>WHY HOOP HOUSE ELITE?</h2>
-
-<div class="why-grid">
-    <div class="why-item">Skill Development</div>
-    <div class="why-item">Basketball IQ</div>
-    <div class="why-item">Competitive Environment</div>
-    <div class="why-item">Leadership</div>
-    <div class="why-item">Discipline</div>
-    <div class="why-item">Long-Term Growth</div>
-</div>
-
-</section>
-
-<section class="founding">
-
-<h2>FOUNDING SEASON 2027</h2>
+<h1>WEBSITE UNDER DEVELOPMENT</h1>
 
 <p>
-New Energy. New Vibe. New Mission. One Goal. Hoop House Elite is building toward its founding season and collecting player interest for boys 6th–8th grade.
-</p>
-
-<img src="founding-season.png" alt="Hoop House Elite Founding Season Flyer" class="flyer">
-
-</section>
-
-<section class="contact" id="contact">
-
-<h2>CONTACT HOOP HOUSE ELITE</h2>
-
-<div class="contact-box">
-<p>
-Interested in Hoop House Elite skills training, AAU teams, or player development? Complete the player interest form and our staff will follow up with future updates.
+Our team website is currently being updated.
 </p>
 
 <p>
-<strong>Director:</strong> Roman Hill
+Please check back soon for official program information, player interest updates, and future announcements.
 </p>
 
-<p>
-📧 uptownyoungrome@gmail.com
+<p class="notice">
+Thank you for your patience.
 </p>
 
-<p>
-📍 Augusta / Columbia County Area<br>
-🏀 Boys 6th–8th Grade<br>
-📅 Founding Season 2027
-</p>
-
-<div class="contact-links">
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSeWwe-A72LRH_SdNA9Rc4T7snkpMRMvhuwEINdjoiLDEmvs9A/viewform?usp=sharing" target="_blank">Player Interest Form</a>
-<a href="mailto:uptownyoungrome@gmail.com">Email Director</a>
 </div>
-</div>
-
-</section>
-
-<footer class="footer">
-    © 2026 Hoop House Elite. Building disciplined athletes on and off the court.
-</footer>
 
 </body>
 </html>
